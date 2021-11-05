@@ -399,7 +399,7 @@ body {
     }
 }
 
-@keyframes Road-marking1-left-to-right {
+/* @keyframes Road-marking1-left-to-right {
   
     100%{
         transform: translateX(100%);
@@ -413,7 +413,7 @@ body {
         transform: translateX(0%);
         
     }
-}
+} */
 
 /*  keyframes for drill blades animation */
 
@@ -587,7 +587,7 @@ body {
 }
 
 
-
+/* 
 @-webkit-keyframes Road-marking1-left-to-right {
   
     100%{
@@ -602,7 +602,7 @@ body {
         transform: translateX(0%);
         
     }
-}
+} */
 
 
 
