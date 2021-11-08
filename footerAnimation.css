@@ -6,12 +6,20 @@ body {
 
 }
 
+svg{
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
 #Animation {
     display: flex;
     flex-grow: 1;
 }
 
-#Animation_container{
+/* #Animation_container{
     width: 100%;
     height: max-content;
     padding: 0%;
@@ -20,10 +28,10 @@ body {
     flex-direction: row;
     justify-content: center;
 
-}
+} */
 #Yellow_car{
 
-    visibility: hidden;
+    
     animation: Yellow-car-left-to-right 30s linear  infinite ;
         /* 50 */
 } 
@@ -36,7 +44,7 @@ body {
 
 #Green_airship{
 
-    visibility: hidden;
+    
     animation: Green-airship-left-to-right 125s linear infinite;
 }
 
@@ -49,21 +57,23 @@ body {
 #Orange_car{
 
     visibility: hidden;
-    animation: Orange-car-right-to-left 38.5s linear 10s infinite;
+    animation: Orange-car-right-to-left  38.5s linear 10s infinite;
     /* 55 */
+
+   
 }
 
 #Pink_car{
   
     visibility: hidden;
-    animation: Pink-car-right-to-left 31.5s linear 15s infinite;
+    animation: Pink-car-right-to-left 31.5s  linear 15s infinite;
      /* 45 */
-
+     
 }
 
 #Blue_bus{
   
-    visibility: hidden;
+    
     animation: Blue-bus-right-to-left 31.5s linear infinite;
      /* 45 */
 
@@ -71,14 +81,14 @@ body {
 
 #Yellow_carrier_machine{
 
-     visibility: hidden;
+     
     animation: Yellow-carrier-machine-right-to-left 40s linear infinite ;
 
     
 }
 
 #Concrete_panels{
-    visibility: hidden;
+    
     animation: Concrete-panel-right-to-left 40s linear infinite ;
     
 }
@@ -104,18 +114,6 @@ body {
     animation: Dirt-left-to-right 20s linear 10s infinite ;
 }
 
-
-/* test config for city and road  */
-/* #Bg_city_2{
-
-    animation: City2-left-to-right 420s linear 1s infinite; 
-}
-
-#Bg_city_1{
-
-    
-    animation: City1-left-to-right 420s linear 1s infinite;
-} */
 #Bg_city_3{
 
     
@@ -135,25 +133,6 @@ body {
     animation: City5-left-to-right 480s linear 1s infinite;
 }
 
-/* Road marking animation declaration and initial config */
-
-/* #Road_marking_1{
-
-    animation: Road-marking1-left-to-right 50s linear 1s infinite;
-
-}
-#Road_marking_2{
-    transform: translateX(-100%);
-    animation: Road-marking2-left-to-right 50s linear 1s infinite;
-
-} */
-
-/* Tunnel digger machine Blades config for animation */
-
-/* #Drill_blades{
-    transform-origin: center;
-    animation: Drill-blades-spin 5s ease-in 1s infinite;
-} */
 
 
 
@@ -166,54 +145,68 @@ body {
 @keyframes Yellow-car-left-to-right{
     0%{
         transform: translateX(-3%);
-        visibility: visible;
+        /* visibility: visible; */
 
     }
     
     90%{
         
         transform: translateX(100%);
-        visibility: hidden;
-        
+        /* visibility: hidden; */
+    }
+    100%{
+
+        transform: translateX(100%);
+
     }
 }
 @keyframes Magenta-car-left-to-right {
     
     0%{
         transform: translateX(-8%);
-        visibility: visible;
+        /* visibility: visible; */
 
     }
     
     88.89%{
         
         transform: translateX(100%);
-        visibility: hidden;
+        /* visibility: hidden; */
        
+    }
+    100%{
+        transform: translateX(100%);
     }
 } 
 @keyframes Green-airship-left-to-right {
 
     0%{
         transform: translateX(-5%);
-        visibility: visible;
+        /* visibility: visible; */
     }
     95.84%{
         transform: translateX(100%);
-        visibility: hidden;
+        /* visibility: hidden; */
         
+    }
+    100%{
+
+        transform: translateX(100%);
     }
 }
 @keyframes Pink-airship-right-to-left  {
     0%{
         
         transform: translateX(4%);
-        visibility: visible;
+        /* visibility: visible; */
     }
     95.24%{
         transform: translateX(-100%);
-        visibility: hidden;
+        /* visibility: hidden; */
         
+    }
+    100%{
+        transform: translateX(-100%);
     }
 }
 
@@ -221,43 +214,50 @@ body {
     0%{
         
         transform: translateX(17%);
-        visibility: visible;
+        /* visibility: visible; */
     }
     90.91%{
-        transform: translateX(-100%);
-        visibility: hidden;
-        
+        transform: translateX(-90%)    
+    }
+    100%{
+        transform: translateX(-90%);
     }
 }
 
 @keyframes Pink-car-right-to-left  {
     0%{
         transform: translateX(11%);
-        visibility: visible;
+        /* visibility: visible; */
     }
     88.89%{
-        transform: translateX(-100%);
-        visibility: hidden;
+        transform: translateX(-93%);
+
         
     }
+    100%{
+        transform: translateX(-93%)
+    }
+
 }
 
 @keyframes Blue-bus-right-to-left  {
     0%{
         transform: translateX(7%);
-        visibility: visible;
+        /* visibility: visible; */
     }
     88.89%{
         transform: translateX(-100%);
-        visibility: hidden;
         
+    }
+    100%{
+        transform: translateX(-100%);
     }
 }
 
 @keyframes Yellow-carrier-machine-right-to-left  {
     0%{
         transform: translateX(13%);
-        visibility: visible;
+        /* visibility: visible; */
     }
     37.5%{
         transform: translateX(-46%);
@@ -271,7 +271,7 @@ body {
     }
     100%{
         transform: translateX(13%);
-        visibility: hidden;
+        /* visibility: hidden; */
     }
     
 }
@@ -279,14 +279,14 @@ body {
 @keyframes Concrete-panel-right-to-left {
     0%{
         transform: translateX(13%);
-        visibility: visible;
+        /* visibility: visible; */
     }
     37.5%{
         transform: translateX(-46%);
     }
     100%{
         transform: translateX(-46%);
-        visibility: hidden;
+        /* visibility: hidden; */
     }
     
 }
@@ -302,50 +302,13 @@ body {
 @keyframes Dirt-left-to-right {
   
     75%{
-        transform: translateX(100%);
+        transform: translateX(48%);
     }
     100%{
-        transform: translateX(100%);
+        transform: translateX(48%);
     }
 }
 
-/* @keyframes City1-left-to-right{
-  
-
-    66.66%{
-        transform: translateX(100%);
-        visibility: hidden;
-    }
-    66.67%{
-        transform: translateX(-50%);
-        visibility: visible;
-
-    }
-    100%{
-
-        transform: translateX(0%);
-    }
-}
-
-@keyframes City2-left-to-right{
-    
-    33.33%{
-        transform: translateX(50%);
-        visibility: hidden;     
-    }
-    33.34%{
-        
-        transform: translateX(-100%);
-    }
-    66.66%{
-        visibility: visible;
-        transform: translateX(-50%);
-    }
-    100%{
-
-        transform: translateX(0%);
-    }
-} */
 
 @keyframes City3-left-to-right{
   
@@ -371,10 +334,12 @@ body {
   
     66.66%{
         transform: translateX(100%);
-        visibility: hidden;
+        
     }
     66.67%{
+        
         transform: translateX(-50%);
+
         
     }
     100%{
@@ -399,99 +364,76 @@ body {
     }
 }
 
-/* @keyframes Road-marking1-left-to-right {
-  
-    100%{
-        transform: translateX(100%);
-        
-    }
-}
-
-@keyframes Road-marking2-left-to-right {
-  
-    100%{
-        transform: translateX(0%);
-        
-    }
-} */
-
-/*  keyframes for drill blades animation */
-
-/* @keyframes Drill-blades-spin{
-
-    100%{
-        transform: rotate3d(1,0,0,360deg);
-    }
-
-} */
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------------------------------------------------------------------------------------------------
- Prefixed Animation keyframes declaration for brpwser preference
+ Prefixed Animation keyframes declaration for browser preference
  ---------------------------------------------------------------------------------------------------- */
 
 
-@-webkit-keyframes  Yellow-car-left-to-right{
+ @-webkit-keyframes  Yellow-car-left-to-right{
     0%{
         transform: translateX(-3%);
-        visibility: visible;
+        /* visibility: visible; */
 
     }
     
     90%{
         
         transform: translateX(100%);
-        visibility: hidden;
-        
+        /* visibility: hidden; */
+    }
+    100%{
+
+        transform: translateX(100%);
+
     }
 }
 @-webkit-keyframes  Magenta-car-left-to-right {
     
     0%{
         transform: translateX(-8%);
-        visibility: visible;
+        /* visibility: visible; */
 
     }
     
     88.89%{
         
         transform: translateX(100%);
-        visibility: hidden;
+        /* visibility: hidden; */
        
+    }
+    100%{
+        transform: translateX(100%);
     }
 } 
 @-webkit-keyframes  Green-airship-left-to-right {
 
     0%{
         transform: translateX(-5%);
-        visibility: visible;
+        /* visibility: visible; */
     }
     95.84%{
         transform: translateX(100%);
-        visibility: hidden;
+        /* visibility: hidden; */
         
+    }
+    100%{
+
+        transform: translateX(100%);
     }
 }
 @-webkit-keyframes  Pink-airship-right-to-left  {
     0%{
         
         transform: translateX(4%);
-        visibility: visible;
+        /* visibility: visible; */
     }
     95.24%{
         transform: translateX(-100%);
-        visibility: hidden;
+        /* visibility: hidden; */
         
+    }
+    100%{
+        transform: translateX(-100%);
     }
 }
 
@@ -499,43 +441,50 @@ body {
     0%{
         
         transform: translateX(17%);
-        visibility: visible;
+        /* visibility: visible; */
     }
     90.91%{
-        transform: translateX(-100%);
-        visibility: hidden;
-        
+        transform: translateX(-90%)    
+    }
+    100%{
+        transform: translateX(-90%);
     }
 }
 
 @-webkit-keyframes  Pink-car-right-to-left  {
     0%{
         transform: translateX(11%);
-        visibility: visible;
+        /* visibility: visible; */
     }
     88.89%{
-        transform: translateX(-100%);
-        visibility: hidden;
+        transform: translateX(-93%);
+
         
     }
+    100%{
+        transform: translateX(-93%)
+    }
+
 }
 
 @-webkit-keyframes  Blue-bus-right-to-left  {
     0%{
         transform: translateX(7%);
-        visibility: visible;
+        /* visibility: visible; */
     }
     88.89%{
         transform: translateX(-100%);
-        visibility: hidden;
         
+    }
+    100%{
+        transform: translateX(-100%);
     }
 }
 
 @-webkit-keyframes  Yellow-carrier-machine-right-to-left  {
     0%{
         transform: translateX(13%);
-        visibility: visible;
+        /* visibility: visible; */
     }
     37.5%{
         transform: translateX(-46%);
@@ -549,7 +498,7 @@ body {
     }
     100%{
         transform: translateX(13%);
-        visibility: hidden;
+        /* visibility: hidden; */
     }
     
 }
@@ -557,14 +506,14 @@ body {
 @-webkit-keyframes  Concrete-panel-right-to-left {
     0%{
         transform: translateX(13%);
-        visibility: visible;
+        /* visibility: visible; */
     }
     37.5%{
         transform: translateX(-46%);
     }
     100%{
         transform: translateX(-46%);
-        visibility: hidden;
+        /* visibility: hidden; */
     }
     
 }
@@ -576,37 +525,19 @@ body {
     }
 }
 
+
 @-webkit-keyframes  Dirt-left-to-right {
   
     75%{
-        transform: translateX(100%);
+        transform: translateX(48%);
     }
     100%{
-        transform: translateX(100%);
+        transform: translateX(48%);
     }
 }
 
 
-/* 
-@-webkit-keyframes Road-marking1-left-to-right {
-  
-    100%{
-        transform: translateX(100%);
-        
-    }
-}
-
-@-webkit-keyframes Road-marking2-left-to-right {
-  
-    100%{
-        transform: translateX(0%);
-        
-    }
-} */
-
-
-
-@-webkit-keyframes City3-left-to-right{
+@-webkit-keyframes  City3-left-to-right{
   
     33.33%{
         transform: translateX(50%);
@@ -626,14 +557,16 @@ body {
     }
 }
 
-@-webkit-keyframes City4-left-to-right{
+@-webkit-keyframes  City4-left-to-right{
   
     66.66%{
         transform: translateX(100%);
-        visibility: hidden;
+        
     }
     66.67%{
+        
         transform: translateX(-50%);
+
         
     }
     100%{
@@ -645,7 +578,7 @@ body {
 }
 
 
-@-webkit-keyframes City5-left-to-right{
+@-webkit-keyframes  City5-left-to-right{
     0%{
         visibility: visible;
 
@@ -657,6 +590,7 @@ body {
         
     }
 }
+
 
 
 
