@@ -10,23 +10,30 @@
 </head>
 <body>
     
-    <div id = "Animation_container">
+    <div id="Animation_container">
         <object id="Footer_animation_object_container" data="Animation.svg" type="image/svg+xml">
-            <!-- <img src="Fallbackanimationimage.svg" alt="FooterAnimation"> -->
+            <img src="Fallbackanimationimage.svg" alt="FooterAnimation">
         </object>  
     </div>
     
 
+    <script>
 
-    <!-- <script>
-        window.onload =  () => heightSetter();
-        function heightSetter(){
-            
-            var footerAnimationObject = document.querySelector("Object");
-            var objectContentBody = footerAnimationObject.contentDocument.all[7];
-            footerAnimationObject.style.height = `${objectContentBody.clientHeight}px`;
-        
-        }
-     </script> -->
+            window.onload = () => heightSetter();
+            window.onresize = () => heightSetter();
+
+            function heightSetter(){
+                
+                var footerAnimationObject = document.querySelector('object');
+                var objectContentDocumentElement = footerAnimationObject.contentDocument.documentElement;
+                footerAnimationObject.style.height = `${objectContentDocumentElement.clientHeight}px`;
+
+            }
+
+
+     </script> 
+    </script>
 </body>
 </html>
+
+
